@@ -1,6 +1,4 @@
-# Testar Git 
-ayy lmao
+#Projekt 1 i Ramverk kursen
 
-hello world
 
 
