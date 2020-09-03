@@ -9,9 +9,9 @@ Så det är bara att koda på så länge man inte rör kaverins filer. För att 
 Kort sagt så går det till så här:<br>
 1. Du klonar repositoryn m.h.a **git clone https://github.com/FrediWa/ramverkProj1.git**
 2. Du skriver kod
-3. Du s.k. "stage" din kod med **git add .** (punkten står för alla filer)
-4. Du s.k. "commit" dina ändringar till en local repository med **git commit -m "text här"**
-5. Skriv ett kort deskriptivt meddelande istället för "text här" med din commit. Skriv gärna på engelska.
+3. "Stage" din kod med **git add .** (punkten står för alla filer)
+4. "Commit" dina ändringar till en local repository med **git commit -m "text här"**
+5. Skriv ett kort deskriptivt meddelande istället för "text här" med din commit. Skriv gärna på engelska mellan 5-12 ord. Gör inget om den blir längre än så men försök hålla den kort. Visserligen kan den också vara kortare än 5 ord ifall du får sagt allt du vill.
 6. Dra först ner alla ändringar med **git pull**. Om allting går som det ska borde man inte stöta emot några problem.
 7. Efter att du har dragit ner senaste ändringarna kan du skuffa upp koden till remote repositoryn med **git push**. Det kan hända att konsolen klagar på dej första gången du gör det här. I så fall skriver du **git push --set-upstream origin master**. Efter att du gjort det borde de i fortsättningen räcka med bara **git push**.
 8. Repetera från steg 2.
