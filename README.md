@@ -15,7 +15,7 @@ Kort sagt så går det till så här:<br>
 6. Dra först ner alla ändringar med **git pull**. Om allting går som det ska borde man inte stöta emot några problem.
 7. Efter att du har dragit ner senaste ändringarna kan du skuffa upp koden till remote repositoryn med **git push**. Det kan hända att konsolen klagar på dej första gången du gör det här. I så fall skriver du **git push --set-upstream origin master**. Efter att du gjort det borde de i fortsättningen räcka med bara **git push**.
 8. Repetera från steg 2.
-<br>
+
 Det här kan kännas som en massa steg men när man kommer igång med det så är det faktiskt inte så illa. Du gör det här inte heller varje gång du skriver ett tecken. Du kan committa genast när du har någon "helhet" klar som du kan beskriva som t.ex. "Added a customers list Vue" eller "Fixed bugs affecting map on contact page".<br>
 <br>
 Om man tycker att man tappar bort sig med terminalen, kan man använda sig av GitKraken. Det är gratis att använda om man är registrerad som studerande på Github.<br>
