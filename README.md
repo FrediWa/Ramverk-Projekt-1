@@ -1,4 +1,5 @@
 # Projekt 1 i Ramverk kursen
+Preliminär projekt beskrivning, flera punkter kommer sannolikt att ändras.
 
 ## Hur vi arbetar
 Vi försöker fördela arbetet så klart och tydligt som möjligt så kan vi alla jobba på samma branch. Detta betyder att om man vill göra ändringar till kompisens fil måste man fråga först så blir det inga problem med att merge filer.<br>
