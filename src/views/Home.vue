@@ -5,6 +5,8 @@
     <router-link to="/food">Food</router-link>
     <router-link to="/attractions">Attraction</router-link>
     <router-link to="/help">Help</router-link>
+
+    <router-link to="/summary">Summary</router-link>
   </div>
 </template>
 
@@ -14,5 +16,5 @@
 </script>
 
 <style>
-  
+
 </style>
