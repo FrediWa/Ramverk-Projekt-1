@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="transport.css">
+  <!--<link rel="stylesheet" href="../styles.css">-->
+  <title>Transport</title>
+</head>
+  <a class="back-button" href="../index.html" >⮤ Go back</a>
+
+<body>
+  <div id="app">
+    <div class="wrapper">
+         <div class="box box1">
+             <blog-post 
+                 title="Get help through your journey" 
+                 content="I can't unfortunately follow you
+                    everywhere but luckily there is
+                    a tool that can. Download the 
+                    free ASL app to your mobile. The app 
+                    will help you to easily find your way 
+                    around the city. It is also the easiest
+                    way to pay your ticket.
+         
+                    You can also easily find attractions 
+                    on the app and if you find something 
+                    interesting, you can bookmark it 
+         
+                    The app is available on the 
+                    Playstore and on AppStore" >
+             </blog-post>
+          </div>
+
+          <div class="box box2">
+              <blog-post 
+                 title="Too much hassle" 
+                content="I can just call a taxi and you'll be at your destination in no time!">
+              </blog-post>
+              <taxi-knapp></taxi-knapp>
+          
+              <button type="button" class="taxi-button" onclick="alert('calling taxi...')">Call a TAXI</button>
+          </div>
+
+         <div class="box box3">
+             <blog-post
+                title="City Bikes"
+                content="Learn more">
+             </blog-post>
+         </div>
+
+         <div class="box box4">
+             <blog-post
+             title="Indoor Map">
+             </blog-post>
+         </div>
+
+  
+    </div>
+  </div>  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="transport.js"></script>
+</html>
