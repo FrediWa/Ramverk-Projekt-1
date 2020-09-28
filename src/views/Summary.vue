@@ -2,19 +2,32 @@
   <div class="summary">
     <router-link to="/">Go Back</router-link>
     <h1>This is the summary page</h1>
-   <ul>
-     <li>
-       <Box
-       v-for="item in items"
-       v-bind:item="item"
-       v-bind:key="item.id">
-       </Box>
-     </li>
-   </ul>
+<div v-if="1==2">
+  <Box
+  v-for="item in items"
+  v-bind:item="item"
+  v-bind:key="item.id">
+</Box>
+
+</div>
+<ul v-if="Bookmarked.attractions.length > 0">
+  <li v-for="attraction in Bookmarked.attractions" v-bind:item="attraction" v-bind:key="attraction.id">
+   <p>{{ attraction.name }}</p><button v-on:click="remove(attraction.type, attraction.id)">X</button>
+  </li>
+</ul>
+
+     <ul v-if="Bookmarked.restaurants.length > 0">
+       <li v-for="restaurant in Bookmarked.restaurants" v-bind:item="restaurant" v-bind:key="restaurant.id">
+        <p>{{ restaurant.name }}</p><button v-on:click="remove(restaurant.type, restaurant.id)">X</button>
+       </li>
+     </ul>
+
   </div>
+
 </template>
 
 <script>
+import Bookmarked from "../stores/bookmarkedItems.js"
 import Box from '../components/Box.vue'
 
 export default {
@@ -26,24 +39,12 @@ export default {
 
   data () {
     return {
-      items: [
-        {
-          img: 'linnanmaki.jpg',
-          name: "Linnanmäki",
-          type: 'Amusement park'
-        },
-        {
-          img: 'ateneum.jpg',
-          name: "Ateneum",
-          type: 'Museum'
-        },
-        {
-          img: 'corner.jpg',
-          name: "Cornern",
-          type: 'TLK space',
-          cost: "$$"
-        }
-      ]
+      Bookmarked: Bookmarked.data,
+    }
+  },
+  methods: {
+    remove(type, id){
+      Bookmarked.methods.remove(type, id);
     }
   }
 }
