@@ -23,7 +23,7 @@ Om man tycker att man tappar bort sig med terminalen, kan man använda sig av Gi
 <br>
 Med GitKraken gör du stegen 3-7 i princip med 5 musklick istället för en massa skrivande. Commit meddelande måste dock skrivas manuellt in.
 ### Arbetsfördelning
-- Fredi – Summary sidan & Global CSS
+- Fredi – Projektledare, projektstruktur/arkitektur/UI och summary sida
 - Jonas – Hjälp sidan
 - Dilan – Transport sidan & Beskrivning av arbetsprocessen
 - Atte – Framsidan & Specifikationen
