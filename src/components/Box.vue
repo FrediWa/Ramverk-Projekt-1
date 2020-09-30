@@ -1,13 +1,14 @@
 <template lang="html">
-  <div>
-    <p>Img: {{item.img}}</p>
-    <p>Name: {{item.name}}</p>
-    <p>Type: {{item.type}}</p>
+  <div class="box">
+    <img :src="item.img">
+    <h3>{{item.name}}</h3>
+    <p>{{item.type}}</p>
     <p v-if="item.cost">Cost: {{item.cost}}</p>
 
   </div>
 </template>
 
+<!-- Varje restaurang/sevärdhet ska passeras till denna template som ett objekt -->
 <script>
 export default {
   name: 'Box',
