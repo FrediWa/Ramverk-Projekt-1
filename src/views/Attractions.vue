@@ -8,7 +8,7 @@
 
 <script>
   import SightFilterer from '../components/SightFilterer.vue'
-  import BoxHolder from '../components/BoxHolder.vue'
+  import BoxHolder from '../components/Food-SightHolder.vue'
   import Bookmarked from "../stores/bookmarkedItems.js";
 
   export default {
@@ -34,8 +34,8 @@
   }
 </script>
 <style>
-.Sights {
-  height:80vh;
+div.Sights {
+  height:90vh;
   background-color: rgb(68,178,112);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

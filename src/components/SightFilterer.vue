@@ -40,7 +40,7 @@ export default {
         height: 87%;
         position: absolute;
     }
-    button{
+    button.filter {
       margin-top: 10px;
       text-align: center;
       background-color: white;
@@ -50,7 +50,7 @@ export default {
       width: 10vh;
       height: 10vh;
     }
-    button#clear{
+    button#clear {
       text-align: center;
       background-color: white;
       border-style: solid; 

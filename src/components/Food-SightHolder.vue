@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Box from '../components/Box.vue'
+import Box from '../components/Food-Sight.vue'
 
     export default {
         name: "BoxHolder",

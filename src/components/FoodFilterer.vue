@@ -45,7 +45,7 @@ export default {
         height: 87%;
         position: absolute;
     }
-    button.Food{
+    button.filter{
       margin-top: 10px;
       text-align: center;
       background-color: white;

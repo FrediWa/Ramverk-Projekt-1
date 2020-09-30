@@ -28,7 +28,7 @@
 
 <script>
 import Bookmarked from "../stores/bookmarkedItems.js"
-import Box from '../components/Box.vue'
+import Box from '../components/Food-SightHolder.vue'
 
 export default {
   name: 'Parent',
