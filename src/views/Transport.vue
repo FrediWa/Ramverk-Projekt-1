@@ -1,9 +1,8 @@
 <template>
 <div class="about">
     <router-link to="/">Go Back</router-link>
-  <div id="app">
     <div class="wrapper">
-         <div class="box box1">
+         <div class="boxs box1">
              <Post
              :title-text="'Get help through your journey'" 
              :content-text="'I cannot unfortunately follow you  \
@@ -20,19 +19,19 @@
                     Playstore and on AppStore'"/>
          </div>
 
-          <div class="box box2">
+          <div class="boxs box2">
              <Post 
              :title-text="'Too much hassle'" 
              :content-text="'I can just call a taxi and you will be at your destination in no time!'"/>
           </div>
 
-         <div class="box box3">
+         <div class="boxs box3">
              <Post
               :title-text="'City Bikes'" 
               :content-text="'Learn more'"/>
          </div>
 
-         <div class="box box4">
+         <div class="boxs box4">
              <Post 
              :title-text="'Indoor Map'" />
          </div>
@@ -40,8 +39,7 @@
   
     </div>
   </div>  
-</div>
-  
+
 </template>
 
 <script>
@@ -59,12 +57,15 @@ export default {
 
 
 <style>
-body{
+.about{
     background-color: #30BFBF;
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 20px;
+    width: 1870px;
+    height: 670px;
 }
+
 
 .wrapper {
     display: grid;
