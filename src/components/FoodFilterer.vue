@@ -1,3 +1,4 @@
+<!-- Jag tror det är bäst att använda displaytoggling för filtret, annars blir det rådd med objektenas index -->
 <template  lang="html">
   <div class="filter">
  <h2>Filter Restaurants</h2>

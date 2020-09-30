@@ -1,7 +1,7 @@
 
 <template  lang="html">
 <div id="flexcontainer">
-  <Box v-for='thing in boxes' :key="thing.name" :item="thing"></Box>
+  <Box v-for='(thing, index) in boxes' :key="thing.name" :item="thing" :id="index"></Box>
 </div>
                 <!--
                 <p v-for="(sight, index) in sights" :key="index">

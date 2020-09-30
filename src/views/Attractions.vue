@@ -1,11 +1,6 @@
 <template>
-  <div class="about">
+  <div class="Sights">
     <router-link to="/">Go Back</router-link>
-    <button v-on:click="bookmark(1, 4, 'Taco Bell')">Test</button>
-    <button v-on:click="remove(4)">Remove</button>
-    <!--Fredi: första parametern i bookmark() är type, 0 för turistmål, 1 för restauranger. 
-               Andra parametern är ställets ID (som du borde kunna få automatiskt om du laddar in lådorna med en for-loop) 
-               och sista är namnet. -->
         <SightFilterer/>
         <BoxHolder :boxes="sights"/>
   </div>
