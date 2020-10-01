@@ -23,6 +23,7 @@
              <Post 
              :title-text="'Too much hassle'" 
              :content-text="'I can just call a taxi and you will be at your destination in no time!'"/>
+            <alert-box /> 
           </div>
 
          <div class="boxs box3">
@@ -43,12 +44,14 @@
 </template>
 
 <script>
-import Post from "../components/TransportText.vue"
+import Post from "../components/TransportText"
+import AlertBox from "../components/AlertBox"
 
 export default {
     name: "Transport",
     components: {
-        Post
+        Post,
+        AlertBox
     }
 };
     
@@ -105,19 +108,6 @@ export default {
     font-size: 20px;
     text-decoration: none;
     color: white;
-}
-
-.taxi-button {
-    color: black;
-    background: #ffdf00;
-    border: none;
-    border-color: transparent;
-    font-size: 20px;
-    font-weight: bold;
-    height: 40px;
-    width: 200px;
-    margin-top: 15px;
-    border-radius: 10px;
 }
 
 h1{
