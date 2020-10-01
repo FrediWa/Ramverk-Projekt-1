@@ -3,7 +3,7 @@
     <router-link to="/">Go Back</router-link>
     <div class="wrapper">
          <div class="boxs box1">
-             <Post
+             <Post id="one"
              :title-text="'Get help through your journey'" 
              :content-text="'I cannot unfortunately follow you  \
                     everywhere but luckily there is \
@@ -20,21 +20,23 @@
          </div>
 
           <div class="boxs box2">
-             <Post 
+             <Post  id="two"
              :title-text="'Too much hassle'" 
-             :content-text="'I can just call a taxi and you will be at your destination in no time!'"/>
+             :content-text="'Order an Airport Taxi and you will be at your destination in no time!'"/>
             <alert-box /> 
           </div>
 
          <div class="boxs box3">
-             <Post
+             <Post id="three"
               :title-text="'City Bikes'" 
               :content-text="'Learn more'"/>
+              <Images />
          </div>
 
          <div class="boxs box4">
-             <Post 
+             <Post id="four"
              :title-text="'Indoor Map'" />
+             <img :src="product[0]" />
          </div>
 
   
@@ -46,17 +48,32 @@
 <script>
 import Post from "../components/TransportText"
 import AlertBox from "../components/AlertBox"
+import Images from "../components/TransportPics"
 
 export default {
     name: "Transport",
     components: {
         Post,
-        AlertBox
-    }
+        AlertBox,
+        Images
+    },
+     data: () => {
+            return {
+                product: [
+                    {
+                        image: require("@/assets/Bike.png")
+                    },
+                    {
+                        image: require("@/assets/ASLapp.png")
+                    }
+                ] 
+            }
+        }
 };
-    
 
 </script>
+    
+
 
 
 <style>
@@ -65,8 +82,8 @@ export default {
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 20px;
-    width: 1870px;
-    height: 670px;
+    width: 1900px;
+    height: 700px;
 }
 
 
@@ -84,6 +101,7 @@ export default {
     background: white;
     padding: 1em;
     border-radius: 20px;
+    margin-left: 30px;
 }
 
 .box1{
@@ -110,17 +128,24 @@ export default {
     color: white;
 }
 
-h1{
-    font-size: 45px;
-}
 h2{
     font-size: 30px;
     text-align: center;
+    font-weight: bold;
 }
 p{
     font-size: 20px;
 }
 p1{
     font-size: 18px;
+}
+#one h2{
+    font-size: 45px;
+}
+#one{
+    text-align: left;
+}
+#three{
+    text-align: left;
 }
 </style>
