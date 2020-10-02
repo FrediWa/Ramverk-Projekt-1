@@ -2,7 +2,8 @@
   <div class="Sights">
     <router-link class="go-back-button" to="/">Go Back</router-link>
         <SightFilterer/>
-        <BoxHolder :boxes="sights"/>
+        <!-- propsen i barnelementen har samma namn som de funktioner de motsvarar -->
+        <BoxHolder :boxes="sights" :bookmark="bookmark" :remove="remove" :isbookmarked="isbookmarked"/>
   </div>
 </template>
 
@@ -20,7 +21,9 @@
     data(){
       return {
         Bookmarked: Bookmarked.data,
-        sights: [{img: '../src/assets/logo.png',name: 'Borgbacken', type:'Kul ställe', loc: 'Helsinginkatu, Helsinki'},{img: '../assets/logo.png',name: 'Sibelius Monument', type:'Kuckuu!', loc: 'Sibelius Park, Helsinki'}]
+        sights: [{type: 0,id: 0,img: '../src/assets/logo.png',name: 'Borgbacken', desc:'Kul ställe', loc: 'Helsinginkatu, Helsinki'},
+                 {type: 0,id: 1,img: '../assets/logo.png',name: 'Sibelius Monument', desc:'Kuckuu!', loc: 'Sibelius Park, Helsinki'},
+                 {type: 0, id: 2, name:"Sea Life"}, {type: 0, id: 3, name:"Ateneum"}, {type: 0, id: 4, name:"Sibelius monument"}]
       }
     },
     methods: {
@@ -29,6 +32,9 @@
       },
       remove(type, id){
         Bookmarked.methods.remove(type, id)
+      },
+      isbookmarked(type, id){
+        Bookmarked.methods.isbookmarked(type, id)
       }
     }
   }
