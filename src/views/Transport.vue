@@ -1,10 +1,10 @@
 <template>
 <div class="about">
-    <router-link to="/">Go Back</router-link>
+    <router-link class="go-back-button" to="/">Go Back</router-link>
     <div class="wrapper">
          <div class="boxs box1">
              <Post id="one"
-             :title-text="'Get help through your journey'" 
+             :title-text="'Get help through your journey'"
              :content-text="'I cannot unfortunately follow you  \
                     everywhere but luckily there is \
                     a tool that can. Download the  \
@@ -21,14 +21,14 @@
 
           <div class="boxs box2">
              <Post  id="two"
-             :title-text="'Too much hassle'" 
+             :title-text="'Too much hassle'"
              :content-text="'Order an Airport Taxi and you will be at your destination in no time!'"/>
-            <alert-box /> 
+            <alert-box />
           </div>
 
          <div class="boxs box3">
              <Post id="three"
-              :title-text="'City Bikes'" 
+              :title-text="'City Bikes'"
               :content-text="'Learn more'"/>
               <Images />
          </div>
@@ -39,9 +39,9 @@
              <img :src="product[0]" />
          </div>
 
-  
+
     </div>
-  </div>  
+  </div>
 
 </template>
 
@@ -66,13 +66,13 @@ export default {
                     {
                         image: require("@/assets/ASLapp.png")
                     }
-                ] 
+                ]
             }
         }
 };
 
 </script>
-    
+
 
 
 
@@ -105,8 +105,8 @@ export default {
 }
 
 .box1{
-   grid-column: 1/2;   
-   grid-row: 1/6;      
+   grid-column: 1/2;
+   grid-row: 1/6;
 }
 .box2{
    grid-column: 2;
@@ -114,7 +114,7 @@ export default {
    text-align: center;
 }
 .box3{
-   grid-column: 2;   
+   grid-column: 2;
    grid-row: 4/6;
 }
 .box4{

@@ -1,8 +1,9 @@
 <template>
   <div class="summary-screen">
+      <router-link class="go-back-button" to="/">Go Back</router-link>
     <div class="summary-container">
 
-      <router-link to="/">Go Back</router-link>
+
       <h1>Here are all places you've taken an interest in</h1>
       <h2>Below you will find the option to generate a QR code which you can scan in order to import your bookmarks to the ASL app on your phone. More information can be found <router-link to="/Help">here</router-link></h2>
       <ul v-if="Bookmarked.attractions.length > 0" class="summary-list">
@@ -33,7 +34,7 @@ import Bookmarked from "../stores/bookmarkedItems.js";
 export default {
   mounted(){
     this.getQR();
-  }, 
+  },
   name: 'Parent',
 
   components: {

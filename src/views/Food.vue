@@ -1,6 +1,6 @@
 <template>
   <div class="Food">
-    <router-link to="/">Go Back</router-link>
+    <router-link class="go-back-button" to="/">Go Back</router-link>
         <FoodFilterer/>
         <BoxHolder :boxes="food"/>
 
