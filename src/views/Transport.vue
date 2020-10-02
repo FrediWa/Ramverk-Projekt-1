@@ -3,20 +3,20 @@
     <router-link class="go-back-button" to="/">Go Back</router-link>
     <div class="wrapper">
          <div class="boxs box1">
-             <Post id="one"
-             :title-text="'Get help through your journey'"
-             :content-text="'I cannot unfortunately follow you  \
-                    everywhere but luckily there is \
-                    a tool that can. Download the  \
-                    free ASL app to your mobile. The app  \
-                    will help you to easily find your way  \
-                    around the city. It is also the easiest \
-                    way to pay your ticket. \
-                    You can also easily find attractions  \
-                    on the app and if you find something  \
-                    interesting, you can bookmark it  \
-                    The app is available on the  \
-                    Playstore and on AppStore'"/>
+             <img :src="img1" id="img1" class="rounded float-right">
+             <Post :first-title="'Get help through your journey'"  id="oneTitle"/>
+             <Post :content-text="'I unfortunately cannot follow you  \
+                                   everywhere but luckily there is \
+                                   a tool that can. Download the  \
+                                   free ASL app to your mobile. The app  \
+                                   will help you to easily find your way  \
+                                   around the city. It is also the easiest \
+                                   way to pay your ticket. '"  id="oneContent" />
+            <Post :content-text="' You can also easily find attractions  \
+                                   on the app and if you find something  \
+                                   interesting, you can bookmark it.'"/>
+            <Post :content-text="'The app is available on the Playstore and on AppStore'"/>
+
          </div>
 
           <div class="boxs box2">
@@ -24,21 +24,31 @@
              :title-text="'Too much hassle'"
              :content-text="'Order an Airport Taxi and you will be at your destination in no time!'"/>
             <alert-box />
+            <img :src="img2" id="img2">
+            
           </div>
 
          <div class="boxs box3">
              <Post id="three"
               :title-text="'City Bikes'"
               :content-text="'Learn more'"/>
-              <Images />
+
+              <div class="row">
+                <div class="column">
+                    <img :src="img3" style="width:100%">
+                </div>
+                <div class="column">
+                    <img :src="img4" style="width:100%" >
+                </div>
+            </div>
+
          </div>
 
          <div class="boxs box4">
              <Post id="four"
              :title-text="'Indoor Map'" />
-             <img :src="product[0]" />
          </div>
-
+        
 
     </div>
   </div>
@@ -48,25 +58,20 @@
 <script>
 import Post from "../components/TransportText"
 import AlertBox from "../components/AlertBox"
-import Images from "../components/TransportPics"
 
 export default {
     name: "Transport",
     components: {
         Post,
-        AlertBox,
-        Images
+        AlertBox
     },
      data: () => {
             return {
-                product: [
-                    {
-                        image: require("@/assets/Bike.png")
-                    },
-                    {
-                        image: require("@/assets/ASLapp.png")
-                    }
-                ]
+                img1: require('../assets/ASLapp.png'),
+                img2: require('../assets/car.png'),
+                img3: require('../assets/qrcode.png'),
+                img4: require('../assets/Bike.png'),
+                img5: require('../assets/map.png')
             }
         }
 };
@@ -77,15 +82,15 @@ export default {
 
 
 <style scoped>
+
 .about{
     background-color: #30BFBF;
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 20px;
     width: 1900px;
-    height: 700px;
+    height: 800px;
 }
-
 
 .wrapper {
     display: grid;
@@ -95,11 +100,13 @@ export default {
     justify-items: stretch;
     align-items: stretch;
     width: 130vw;
+    height: 50vw;
+    text-align: left;
 }
 
 .wrapper > div{
     background: white;
-    padding: 1em;
+    padding: 3em;
     border-radius: 20px;
     margin-left: 30px;
 }
@@ -128,24 +135,38 @@ export default {
     color: white;
 }
 
-h2{
-    font-size: 30px;
+#oneContent{
+    margin-top: 50px;
+}
+#two, #four{
     text-align: center;
-    font-weight: bold;
 }
-p{
-    font-size: 20px;
+#img1{
+    margin-top: 100px;
 }
-p1{
-    font-size: 18px;
+#img2{
+    border-radius: 15px;
+    height: 200px;
+    margin-top: 10px;
 }
-#one h2{
-    font-size: 45px;
+#img3{
+    margin-bottom: 100px;
+
 }
-#one{
-    text-align: left;
+#img4{
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
-#three{
-    text-align: left;
+
+.column {
+  float: left;
+  width: 40.33%;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.row::after {
+  clear: both;
+  display: table;
 }
 </style>
