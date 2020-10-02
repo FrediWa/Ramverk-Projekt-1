@@ -33,7 +33,7 @@
     }
   }
 </script>
-<style>
+<style scoped>
 div.Sights {
   height:90vh;
   background-color: rgb(68,178,112);

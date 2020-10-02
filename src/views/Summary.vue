@@ -67,7 +67,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .qr-code button{
   border:none;
   background-color: #fff;

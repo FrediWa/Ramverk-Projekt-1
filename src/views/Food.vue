@@ -34,7 +34,7 @@ export default {
     },
 }
 </script>
-<style>
+<style scoped>
 div.Food {
   height:90vh;
   background-color: rgb(170,67,146);

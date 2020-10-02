@@ -76,7 +76,7 @@ export default {
 
 
 
-<style>
+<style scoped>
 .about{
     background-color: #30BFBF;
     margin-top: 30px;
