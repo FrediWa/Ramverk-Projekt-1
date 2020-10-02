@@ -20,7 +20,7 @@
          </li>
        </ul>
        <div class="qr-code">
-         <img id="demo">
+         <img id="qrcode">
        </div>
     </div>
   </div>
@@ -52,7 +52,7 @@ export default {
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           console.log("received");
-           document.getElementById("demo").src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + JSON.stringify(Bookmarked);
+           document.getElementById("qrcode").src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + JSON.stringify(Bookmarked);
         }
       };
       xhttp.open("GET", "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + JSON.stringify(Bookmarked), true);
@@ -119,6 +119,10 @@ h1{
     padding: 5vh;
     width: 1200px;
     margin: 0 auto;
+  }
+  #qrcode{
+    width: 40%;
+    margin: 20px 30%;
   }
   @media only screen and ( max-width: 1200px){
     .summary-container{
