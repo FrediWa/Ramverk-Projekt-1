@@ -15,6 +15,7 @@ const Bookmarked = {
     },
     remove(type, id){
       console.log(type+" "+id);
+      console.log(this);
       if(type==0){
         Bookmarked.data.attractions.splice(Bookmarked.data.attractions.findIndex(restaurant => restaurant.id == id), 1);
       }else if( type==1){
