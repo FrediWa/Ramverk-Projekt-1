@@ -1,6 +1,6 @@
 <template>
   <div class="help">
-    <router-link to="/">Go Back</router-link>
+    <router-link class="go-back-button" to="/">Go Back</router-link>
 
     <div class="helpFlexContainer">
 
@@ -14,8 +14,8 @@
         >
         </Questions>
       </div>
-    <div class="questionBox" v-else>
-      <p class="go-back-button"></p>
+    <div class="questionBox" v-else @click="goBack(1)">
+      <h1>{{questionData}}</h1>
       <p id="answer">{{textData}}</p>
     </div>
 
@@ -28,7 +28,7 @@
        v-bind:callHelp="getHelp">
     </Call>
   </div>
-  <div class=callHelpBox v-else>
+  <div class=callHelpBox v-else @click="goBack(2)">
     <h1>{{callText}}</h1>
   </div>
 
@@ -52,6 +52,7 @@ export default {
 data (){
     return {
       displayQuestions: true,
+      questionData: '',
       textData: '',
       helpShow: true,
       callText: '',
@@ -78,23 +79,28 @@ data (){
         }
       ],
       callHelp: [{
-        prepare: "I can call a human for you if you need help understanding me or if you need something I can't help you with",
+        prepare: "I can call a human for you if you need help understanding me. Click here!",
         task: "Calling for assistance..."
       }]
       
     }
   },
   methods: {
-    openQuestion(id, q){
-     this.textData = q
+    openQuestion(question, text){
+     this.textData = text
+     this.questionData = question
+     if(this.displayQuestions == true){
      this.displayQuestions = false;
+     } else{this.displayQuestions = true}
     },
     getHelp(text){
       this.callText = text
       this.helpShow = false
     },
-    goBack(){
-
+    goBack(nmr){
+      if(nmr == 1){
+      this.displayQuestions = !this.displayQuestions;
+      }else{this.helpShow = !this.helpShow}
     }
   }
   }
@@ -111,31 +117,35 @@ data (){
     left:0px;
     z-index:1000;
     color:rgb(73, 73, 73);
-    font-size: 20px;
+    font-size: 25px;
     -webkit-text-stroke: rgb(0, 0, 0) 0.6px;
 }
 
 .questionBox{
+  align-content: center;
   background: white;
-  width:60vh;
+  width:80vh;
   padding: 6vh;
   border: 2px solid rgb(156, 0, 0);
   border-radius: 10px;
   
 }
-.questionBox > h1:hover{
+.questionBox > *:hover{
   color:rgba(202, 32, 69, 0.767);
+  cursor:grab;
 }
 
 .callHelpBox{
   background: white;
-  width:60vh;
+  width:70vh;
   padding: 10vh;
   border: 2px solid rgb(156, 0, 0);
   border-radius: 10px;
+  font-size: 4vh;
 }
-.callHelpBox > h1:hover{
+.callHelpBox > *:hover{
   color:rgba(202, 32, 69, 0.767);
+  cursor:grab;
 }
 
 .helpFlexContainer{
@@ -143,9 +153,13 @@ display: flex;
 flex-wrap:nowrap;
 justify-content: center;
 align-content: center;
-margin:5vh;
 }
+.helpFlexContainer > div{
+  margin: 6vh
+}
+
 #answer{
   font-size: 30px;
+  color:rgba(202, 32, 69, 0.767);
 }
 </style>

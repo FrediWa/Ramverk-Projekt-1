@@ -1,6 +1,6 @@
 <template lang="html">
-  <div>
-      <a @click="callHelp(call.task)"><div><p>{{call.prepare}}</p></div></a>
+  <div @click="callHelp(call.task)">
+      <div><p>{{call.prepare}}</p></div>
   </div>
 </template>
 

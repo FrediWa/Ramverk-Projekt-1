@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-      <a @click="onClick(item.id, item.text)"><div><p>{{item.question}}</p></div></a>
+      <a @click="onClick(item.question, item.text)"><div><p>{{item.question}}</p></div></a>
   </div>
 </template>
 
