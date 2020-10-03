@@ -81,7 +81,7 @@ data (){
         prepare: "I can call a human for you if you need help understanding me or if you need something I can't help you with",
         task: "Calling for assistance..."
       }]
-      
+
     }
   },
   methods: {
@@ -100,7 +100,7 @@ data (){
   }
 </script>
 
-<style>
+<style scoped>
 .help{
     opacity:0.8;
     background-color:rgb(156, 0, 0);
@@ -121,7 +121,7 @@ data (){
   padding: 6vh;
   border: 2px solid rgb(156, 0, 0);
   border-radius: 10px;
-  
+
 }
 .questionBox > h1:hover{
   color:rgba(202, 32, 69, 0.767);
