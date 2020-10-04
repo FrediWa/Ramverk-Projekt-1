@@ -3,8 +3,8 @@
     <router-link class="go-back-button" to="/">Go Back</router-link>
     <div class="wrapper">
          <div class="boxs box1">
-             <Post :first-title="'Get help through your journey'" />
-                          <img :src="img1" id="img1" alt="ASL app" class="rounded float-right">
+             <Post :big-title="'Get help through your journey'" />
+                          <img :src="img1" id="img1" alt="ASL app" class="img-fluid rounded float-right" >
              <Post :content-text="'I unfortunately cannot follow you  \
                                    everywhere but luckily there is \
                                    a tool that can. Download the  \
@@ -24,7 +24,7 @@
              :title-text="'Too much hassle'"
              :content-text="'Order an Airport Taxi and you will be at your destination in no time!'"/>
             <alert-box />
-            <img :src="img2" id="img2" alt="Yellow Taxi"> 
+            <img :src="img2" id="img2" alt="Yellow Taxi" class="img-responsive"> 
           </div>
 
          <div class="boxs box3">
@@ -34,10 +34,10 @@
 
               <div class="row">
                 <div class="column">
-                    <img :src="img3" id="img3"  alt="QR code">
+                    <img :src="img3" id="img3"  alt="QR code" class="img-responsive" >
                 </div>
                 <div class="column">
-                    <img :src="img4" id="img4"  alt="Yellow bike" >
+                    <img :src="img4" id="img4"  alt="Yellow bike" class="img-responsive" >
                 </div>
             </div>
          </div>
@@ -45,9 +45,8 @@
          <div class="boxs box4">
              <Post id="four"
              :title-text="'Airport Map'" />
-             <img :src="img5" id="img5"  alt="Aiport map" >
+             <img :src="img5" id="img5"  alt="Aiport map" class="img-responsive">
          </div>
-        
 
     </div>
   </div>
@@ -83,13 +82,11 @@ export default {
 
 .about{
     background-color: #30BFBF;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 20px;
     width: 2260px;
-    height: 870px;
+    height: 910px;
 }
 
+/* GRID LAYOUT */
 .wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr ;
@@ -126,12 +123,7 @@ export default {
     grid-column: 3;
     grid-row: 1/6;
 }
-
-.back-button {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-}
+/* GRID LAYOUT */
 
 #oneContent{
     margin-top: 50px;
@@ -146,7 +138,7 @@ export default {
     height: 200px;
     position: relative; 
     left:46px; 
-    top:18px;
+    top:15px;
 }
 #img3{
     position: relative; 
@@ -159,7 +151,7 @@ export default {
     border-radius: 15px;
     position: relative; 
     left:20px; 
-    top:-70px;
+    top:-75px;
 }
 #img5{
     border-radius: 20px;
@@ -180,4 +172,24 @@ export default {
   display: table;
 }
 
+@media (max-width: 1200px) { 
+    .wrapper{
+      width: 90%;
+      margin: 0 5%;
+    }
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+    #img2{
+        width:100%;
+        height: 160px;
+    }
+    #img4{
+        max-width:230px;
+        max-height:150px;
+        position: relative; 
+        top:-70px;
+       }
+ }
 </style>
