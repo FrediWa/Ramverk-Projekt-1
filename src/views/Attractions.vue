@@ -21,9 +21,17 @@
     data(){
       return {
         Bookmarked: Bookmarked.data,
-        sights: [{type: 0,id: 0,img: '../src/assets/logo.png',name: 'Borgbacken', desc:'Kul ställe', loc: 'Helsinginkatu, Helsinki'},
-                 {type: 0,id: 1,img: '../assets/logo.png',name: 'Sibelius Monument', desc:'Kuckuu!', loc: 'Sibelius Park, Helsinki'},
-                 {type: 0, id: 2, name:"Sea Life"}, {type: 0, id: 3, name:"Ateneum"}, {type: 0, id: 4, name:"Sibelius monument"}]
+        sights: [{type: 0, id: 0,img: '',name: 'Borgbacken', desc:'Whee!', loc: 'Helsinginkatu, Helsinki'},
+                 {type: 0, id: 1,img: '',name: 'Sibelius Monument', desc:'Peekaboo!', loc: 'Sibelius Park, Helsinki'},
+                 {type: 0, id: 2, name:"Sea Life", desc:'Blub blub!'}, 
+                 {type: 0, id: 3, name:"Ateneum", desc:'Hmm, yes...'}, 
+                 {type: 0, id: 4, name:"Kiasma", desc:'I could paint that!'},
+                 {type: 0, id: 5, name:"Tuomiokirkko", desc:'Halleluja!'},
+                 {type: 0, id: 6, name:"Kansalliskirjasto", desc:'Sssh!'},
+                 {type: 0, id: 7, name:"Salutorget", desc:' '},
+                 {type: 0, id: 8, name:"Sveaborg", desc:' '},
+                 {type: 0, id: 9, name:"Central Park", desc:'Not like NY'}
+                 ]
       }
     },
     methods: {
@@ -41,7 +49,7 @@
 </script>
 <style scoped>
 div.Sights {
-  height:90vh;
+  height:100vh;
   background-color: rgb(68,178,112);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

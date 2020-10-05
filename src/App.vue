@@ -40,4 +40,16 @@
   border-bottom-color: transparent;
   margin: 10px;
 }
+button.butt{
+  margin-top: 10px;
+  text-align: center;
+  background-color: white;
+  border-style: solid; 
+  border:grey,1px;
+  border-radius: 9px;
+  width: 12vh;
+  height: 12vh;
+  padding: 0px;
+  margin-right: 2px;
+}
 </style>
