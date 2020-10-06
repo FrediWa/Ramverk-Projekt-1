@@ -28,6 +28,6 @@ Med GitKraken gör du stegen 3-7 i princip med 5 musklick istället för en mass
 - Dilan – Transport sidan & Beskrivning av arbetsprocessen
 - Atte – Framsidan & Specifikationen
 - Kråkan – Mat & Turistmål sidorna & Mötes agendor och protokoll
-- Niklas – Mat & Turistmål sidorna
+- Niklas – 
 <br>
 Bytande arbetsuppgifter sinsemellan är ok. Meddela dock vem som gjort vad så att jag kan lättare skriva en rapport. Det går nog att se från repon vem som har committa vad men det är jobbigt att söka igenom allting.
