@@ -23,11 +23,11 @@ Om man tycker att man tappar bort sig med terminalen, kan man använda sig av Gi
 <br>
 Med GitKraken gör du stegen 3-7 i princip med 5 musklick istället för en massa skrivande. Commit meddelande måste dock skrivas manuellt in.
 ### Arbetsfördelning
-- Fredi – Projektledare, projektstruktur/arkitektur/UI, summary sida och presentation
-- Jonas – Hjälp sidan
-- Dilan – Transport sidan & Beskrivning av arbetsprocessen
-- Atte – Framsidan & Specifikationen
-- Kråkan – Mat & Turistmål sidorna & Mötes agendor och protokoll
-- Niklas – 
+- Fredrik Wasström – Projektledare, projektstruktur/arkitektur/UI, summary sida och presentation
+- Jonas Pihlaja – Hjälp sidan
+- Dilan Zibari – Transport sidan & Beskrivning av arbetsprocessen
+- Atte Marjamäki – Framsidan & Specifikationen
+- Niklas Krogerus – Mat & Turistmål sidorna & Mötes agendor och protokoll
+- Niklas Pihl – 
 <br>
 Bytande arbetsuppgifter sinsemellan är ok. Meddela dock vem som gjort vad så att jag kan lättare skriva en rapport. Det går nog att se från repon vem som har committa vad men det är jobbigt att söka igenom allting.
