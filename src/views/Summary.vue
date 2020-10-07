@@ -47,17 +47,14 @@ export default {
   },
   methods: {
     getQR(){
-      console.log("start");
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          console.log("received");
            document.getElementById("qrcode").src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + JSON.stringify(Bookmarked);
         }
       };
       xhttp.open("GET", "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + JSON.stringify(Bookmarked), true);
       xhttp.send();
-      console.log("sent");
     },
     remove(type, id){
       Bookmarked.methods.remove(type, id);
