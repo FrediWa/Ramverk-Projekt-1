@@ -1,6 +1,6 @@
 <!-- Jag tror det är bäst att använda displaytoggling för filtret, annars blir det rådd med objektenas index -->
 <template  lang="html">
-  <div class="filter">
+  <div class="Sfilter">
  <h2>Filter Attractions</h2>
       <div>
         You can enter the adress of the place you'll be 
@@ -11,9 +11,9 @@
       <input type="adress" v-model="adress" class="form-conrol form-control-lg" style="border-style: solid; border:grey,1px;border-radius: 9px;width: 95%;">
     <br>
       <div>
-        <button>15 minutes</button>
-        <button>15 minutes</button>
-        <button>1 hour transit</button>
+        <button class="butt">15 minutes</button>
+        <button class="butt">30 minutes</button>
+        <button class="butt">1 hour transit</button>
       </div>
     <br>
     <button v-if=filtered id="clear">Clear all filters</button>
@@ -27,29 +27,23 @@ export default {
 </script>
 
 <style>
-    .filter {
+    div.Sfilter {
         background-color: white;
         color:black;
+        z-index:1000;
+        border-style: solid; 
+        border:2px,;
+        border-color: rgb(68,178,112);
         border-radius: 12px;
-        display: block;
         padding: 8px;
         margin: 10px;
+        margin-top: 0px;
         width: 40vh;
-        height: 40vh;
-        display: inline-block;
         height: 87%;
+        float:left;
         position: absolute;
     }
-    button.filter {
-      margin-top: 10px;
-      text-align: center;
-      background-color: white;
-      border-style: solid; 
-      border:grey,1px;
-      border-radius: 9px;
-      width: 10vh;
-      height: 10vh;
-    }
+    
     button#clear {
       text-align: center;
       background-color: white;
