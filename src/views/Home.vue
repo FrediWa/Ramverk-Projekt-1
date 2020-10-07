@@ -7,14 +7,20 @@
       <div class="box box4"><div><router-link to="/help">Help</router-link></div></div>
     </div>
     <footer>
-      <div class="summary-footer"><router-link to="/summary">Summary</router-link></div>
+      <div v-if="Bookmarked.restaurants.length+Bookmarked.attractions.length > 0" class="summary-footer"><router-link to="/summary">Summary</router-link></div>
     </footer>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
+import Bookmarked from "../stores/bookmarkedItems.js";
+export default {
+  data () {
+    return {
+      Bookmarked: Bookmarked.data,
+    }
+  },
+}
 </script>
 
 <style scoped>
@@ -29,8 +35,8 @@
     flex-direction: row;
   }
   .grid2x2 > div {
-    display: flex; 
-    flex-basis: calc(50% - 40px); 
+    display: flex;
+    flex-basis: calc(50% - 40px);
     justify-content: center;
     flex-direction: column;
   }
@@ -39,7 +45,7 @@
     justify-content: center;
     flex-direction: row;
   }
-  
+
   .box { margin: 20px; }
   .box1 { background-color:#118f8f;}
   .box1:hover{ background-color: #30BFBF;}
@@ -62,5 +68,5 @@
     border-radius: 10px;
   }
   .summary-footer:hover{background-color:#282828;}
-  
+
 </style>
