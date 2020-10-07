@@ -24,7 +24,7 @@ Om man tycker att man tappar bort sig med terminalen, kan man använda sig av Gi
 Med GitKraken gör du stegen 3-7 i princip med 5 musklick istället för en massa skrivande. Commit meddelande måste dock skrivas manuellt in.
 ### Arbetsfördelning
 - Fredrik Wasström – Projektledare, projektstruktur/arkitektur/UI, summary sida och presentation
-- Jonas Pihlaja – Hjälp sidan
+- Jonas Pihlaja – Hjälp sidan & Tankekarta
 - Dilan Zibari – Transport sidan & Beskrivning av arbetsprocessen
 - Atte Marjamäki – Framsidan & Specifikationen
 - Niklas Krogerus – Mat & Turistmål sidorna & Mötes agendor och protokoll
