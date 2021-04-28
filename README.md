@@ -1,5 +1,6 @@
-# Projekt 1 i Ramverk kursen
-Preliminär projekt beskrivning, flera punkter kommer sannolikt att ändras.
+This project is the main assignment of the course "Ramverk och webbaplikatoiner" (Frameworks and webapplications). The goal of the project was to, in groups, design and build a web based application that (in our chosen case) would run on the screen of a guide robot to help tourists get information about public transportation and to find attractions.  The rest of the ReadMe is the documentation used during the development of the project
+
+
 
 ## Hur vi arbetar
 Vi försöker fördela arbetet så klart och tydligt som möjligt så kan vi alla jobba på samma branch. Detta betyder att om man vill göra ändringar till kompisens fil måste man fråga först så blir det inga problem med att merge filer.<br>
