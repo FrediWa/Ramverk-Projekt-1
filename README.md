@@ -1,4 +1,4 @@
-This project is the main assignment of the course "Ramverk och webbaplikatoiner" (Frameworks and webapplications). The goal of the project was to, in groups, design and build a web based application that (in our chosen case) would run on the screen of a guide robot to help tourists get information about public transportation and to find attractions.  The rest of the ReadMe is the documentation used during the development of the project
+This project is the main assignment of the course "Ramverk och webbaplikatoiner" (Frameworks and webapplications). The goal of the project was to, in groups, design and build a web based application that (in our chosen case) would run on the screen of a guide robot to help tourists get information about public transportation and to find attractions.  The rest of the ReadMe is the documentation used during the development of the project. The site is built on Vue.js and has no backend.
 
 
 
